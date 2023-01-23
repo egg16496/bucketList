@@ -12,6 +12,7 @@
 
         * {
             font-family: 'Nanum Pen Script', cursive;
+            margin: auto;
         }
 
         .title {
@@ -20,7 +21,38 @@
             font-size: 24px;
             font-style: italic;
             padding: 4px 14px;
+            margin-top: 48px;
             border-radius: 8px;
+        }
+
+        .flex-row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .wrap {
+            flex-wrap: wrap;
+        }
+
+        .bucket {
+            background-size: cover;
+            background-position: center;
+            margin: 8px;
+            position: relative;
+
+            font-weight: bold;
+            font-size: 16px;
+            text-align: center;
+            word-break: keep-all;
         }
 
         .msg {
@@ -29,7 +61,7 @@
 
         .bg {
             width: 360px;
-            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bg-grid.png");
+            background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20220215/pngtree-original-simple-beige-background-image_981347.jpg");
         }
 
         .bucket {
@@ -37,20 +69,14 @@
             height: 160px;
         }
 
-        .img1 {
-            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-red.png");
-            background-size: cover;
-            background-position: center;
-        }
-
-        .img2 {
-
-            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-lightred.png");
+        .img {
+            background-image: url("https://i.ibb.co/XZCF4DK/postIt.png");
             background-size: cover;
             background-position: center;
         }
     </style>
-    <link rel="stylesheet" type="text/css" href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/sparta-bucket2.css">
+    <!-- <link rel="stylesheet" type="text/css"
+        href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/sparta-bucket2.css"> -->
 </head>
 
 <body class="bg center">
@@ -58,10 +84,10 @@
     <p class="msg">꼭 지키자!!!</p>
 
     <div class="row flex-row wrap">
-        <div class="bucket img1 center">1</div>
-        <div class="bucket img2 center">2</div>
-        <div class="bucket img2 center">3</div>
-        <div class="bucket img1 center">4</div>
+        <div class="bucket img center">cad 배우기</div>
+        <div class="bucket img center">60kg 되기</div>
+        <div class="bucket img center">등급 3점대</div>
+        <div class="bucket img center">자기소개 웹사이트</div>
     </div>
 </body>
 
